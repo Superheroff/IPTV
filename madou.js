@@ -17,13 +17,6 @@ function post_encrypt(e, t) {
     return u
 }
 
-function iGetInnerText(testStr) {
-        var resultStr = testStr.replace(/\ +/g, ""); //去掉空格
-        resultStr = testStr.replace(/[ ]/g, "");    //去掉空格
-        resultStr = testStr.replace(/[\r\n]/g, ""); //去掉回车换行
-        return resultStr;
-    }
-
 function post_decrypt(e, t, s) {
     var n = Cryptojs["enc"].Utf8.parse(o + t)
       , i = Cryptojs["enc"].Utf8.parse(a)

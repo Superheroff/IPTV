@@ -75,7 +75,7 @@ def to_m3u8():
                 time.sleep(0.6)
                 for video_info in video_data:
                     f.write(
-                        f'#EXTINF:-1 tvg-logo="{image}" group-title="{name}",{video_info["title"]}\n{video_info["video_url"]}')
+                        f'#EXTINF:-1 tvg-logo="{image}" group-title="{name}",{video_info["title"]}\n{video_info["video_url"]}\n')
 
 
 def __Madou_post(url: str, data: dict, s: bool):
